@@ -1,73 +1,111 @@
-# React + TypeScript + Vite
+Personal Wall
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A minimal full-stack blogging platform where users can post public messages in a clean endless feed.
 
-Currently, two official plugins are available:
+Built with React, TypeScript, Bootstrap, Supabase, and Vercel.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Features
 
-## Expanding the ESLint configuration
+Public posting system
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Endless dynamic feed
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Persistent cloud database storage
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Password-protected delete moderation
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Responsive modern UI
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Real-time frontend/backend integration
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+
+---
+
+Tech Stack
+
+React — component-based frontend architecture
+
+TypeScript — type safety and cleaner scaling
+
+Bootstrap — responsive UI styling
+
+Supabase — backend database and API
+
+Vercel — deployment and hosting
+
+Git/GitHub — version control
+
+
+
+---
+
+What I Learned
+
+React state management with useState
+
+Dynamic rendering using .map()
+
+Controlled forms and event handling
+
+CRUD operations with Supabase
+
+Async/await and API integration
+
+Frontend ↔ backend communication
+
+Git workflows and deployment pipelines
+
+Debugging real-world integration issues
+
+
+
+---
+
+Challenges Faced
+
+Handling Supabase RLS and database permissions
+
+Fixing incorrect API key usage
+
+Debugging frontend/backend data flow
+
+Resolving Git merge and deployment conflicts
+
+Managing persistent online data correctly
+
+
+
+---
+
+Deployment
+
+Deployed using Vercel with Supabase as the cloud backend.
+
+
+---
+
+Future Improvements
+
+User authentication
+
+Edit posts
+
+Timestamps
+
+Dark mode
+
+Better moderation tools
+
+Markdown support
+
+
+
+---
+
+Project Reflection
+
+This project was my transition from tutorial-heavy learning into building and deploying a real full-stack application people could actually use. It helped me understand not just frontend development, but also backend integration, deployment workflows, debugging, and shipping software end-to-end.
